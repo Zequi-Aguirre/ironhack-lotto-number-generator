@@ -1,0 +1,14 @@
+.number {
+	padding: 1em 1.5em;
+	box-sizing: border-box;
+	min-width: 4em;
+	text-align: center;
+	border-radius: 1em;
+	background-color: #eee;
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 1.6em;
+	margin: .5em;
+	border-bottom: 2px solid rgba(0,0,0,.05);
+	box-shadow: 0 0 10px rgba(0,0,0,.05);
+}
