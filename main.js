@@ -53,8 +53,8 @@ const getNumbersHtml = (numbers) => {
 
   for (let i = 0; i < numbers.length; i++) {
     numbersHtml += `<div style="background-color: ${generateColorHex()};" class="number">${
-			numbers[i]
-		}</div>`;
+      numbers[i]
+    }</div>`;
   }
 
   return numbersHtml;
