@@ -89,7 +89,7 @@ button.addEventListener('click', () => {
 	console.log('Generator clicked!');
 	const numbers = generateNumbers();
 	const html = getNumbersHtml(numbers);
-	const numberTextColor = getIsAllEven() ? '#005500' : '#000000';
+	const numberTextColor = getIsAllEven(numbers) ? '#005500' : '#000000';
 	document.head.innerHTML += `<style>#container > div { color: ${numberTextColor} }</style>`;
 	container.innerHTML = html;
 });
