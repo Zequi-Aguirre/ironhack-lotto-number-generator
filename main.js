@@ -40,7 +40,7 @@ const getNumbersHtml = (numbers) => {
 // Team member 4
 const getIsAllEven = (numbers) => {
 	let isAllEven = false;
-s
+
 	// Check if all lottery numbers in array are even and set isAllEven appropriately
 	for (number of numbers){
 		if(number%2!===0){
