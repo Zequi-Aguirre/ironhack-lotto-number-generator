@@ -70,17 +70,18 @@ const getNumbersHtml = (numbers) => {
 // ---------------------------------------
 // Team member 4
 const getIsAllEven = (numbers) => {
-	let isAllEven = false;
-
+	let isAllEven = true;
 	// Check if all lottery numbers in array are even and set isAllEven appropriately
-	for (number of numbers){
-		if(number%2!===0){
-			isAllEven = false;
-		}else{
-			isAllEven = true;
+    for (number of numbers) {
+        const isOdd = number % 2 !== 0;
+        console.log(number);
+        // if odd
+		if (isOdd) {
+            isAllEven = false;
 		}
 	}
-		return isAllEven
+	
+	return isAllEven
 };
 // ---------------------------------------
 // Finished generator
