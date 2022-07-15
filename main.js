@@ -5,13 +5,23 @@ const container = document.getElementById("container");
 // Team member 1
 const generateNumbers = () => {
 	let numbers = [];
+    
+	for (let i = 0; i < 6;){
+        let randomNumber = Math.floor(Math.random() * 53) + 1
 
-	for (let i = 0; i < 6; i++){
-		numbers.push(Math.floor(Math.random() * 53) + 1)
+        if (numbers.includes(randomNumber)){
+            console.log(randomNumber + " it was already in the array");
+    
+        } else {
+            console.log(randomNumber);
+            numbers.push(randomNumber);
+             i++
+        }
+		
 	}
-
+    
 	// Generate 6 random numbers from 1 to 53 and add them to the numbers array
-
+	
 	return numbers; // Return numbers when done
 };
 
