@@ -19,6 +19,10 @@ const generateNumbers = () => {
         }
 		
 	}
+
+	numbers = numbers.sort(function(a, b) {
+  return a - b;
+});
     
 	// Generate 6 random numbers from 1 to 53 and add them to the numbers array
 	
