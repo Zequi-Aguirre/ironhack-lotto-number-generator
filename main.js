@@ -55,11 +55,16 @@ const generateColorHex = () => {
 // Team member 3
 const getNumbersHtml = (numbers) => {
 	let numbersHtml = '';
+
+  for(let i=0; i < numbers.length ; i++){
+    numbersHtml += `<div style="background-color: ${generateColorHex()};" class="number">${numbers[i]}</div>`;
+ }
 	
+
 	// Generate a string that looks like <div class="number">1</div><div class="number">29</div> ...
 	// Use generateColorHex() to generate background-color in inline CSS for each number div (style="background-color: #XXXXXX")
 
-	return '<div class="number">1</div><div class="number">29</div>'; // Return numbersHtml when done 
+	return numbersHtml
 };
 
 // ---------------------------------------
