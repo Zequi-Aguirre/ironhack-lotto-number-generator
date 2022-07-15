@@ -8,7 +8,7 @@ const generateNumbers = () => {
 
 	// Generate 6 random numbers from 1 to 53 and add them to the numbers array
 
-	return [1, 29, 14, 32, 47, 53]; // Return numbers when done
+	// return [1, 29, 14, 32, 47, 53]; // Return numbers when done
 };
 
 // ------------------------------------------------------------------------------
@@ -36,12 +36,17 @@ const getNumbersHtml = (numbers) => {
 // Team member 4
 const getIsAllEven = (numbers) => {
 	let isAllEven = false;
-
+s
 	// Check if all lottery numbers in array are even and set isAllEven appropriately
-
-	 return isAllEven;
+	for (number of numbers){
+		if(number%2!===0){
+			isAllEven = false;
+		}else{
+			isAllEven = true;
+		}
+	}
+		return isAllEven
 };
-
 // ---------------------------------------
 // Finished generator
 button.addEventListener('click', () => {
