@@ -6,9 +6,13 @@ const container = document.getElementById("container");
 const generateNumbers = () => {
 	let numbers = [];
 
+	for (let i = 0; i < 6; i++){
+		numbers.push(Math.floor(Math.random() * 53) + 1)
+	}
+
 	// Generate 6 random numbers from 1 to 53 and add them to the numbers array
 
-	// return [1, 29, 14, 32, 47, 53]; // Return numbers when done
+	return numbers; // Return numbers when done
 };
 
 // ------------------------------------------------------------------------------
